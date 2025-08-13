@@ -1,0 +1,155 @@
+products.html<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>منتجاتنا | متجر حسين</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>منتجاتنا</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- تصنيفات المنتجات -->
+  <section id="categories" style="text-align:center; margin: 30px 0;">
+    <button onclick="showCategory('electronics')">إلكترونيات</button>
+    <button onclick="showCategory('clothing')">ملابس</button>
+    <button onclick="showCategory('accessories')">إكسسوارات</button>
+  </section>
+
+  <!-- منتجات إلكترونيات -->
+  <section id="electronics" class="product-category">
+    <h2>📱 إلكترونيات</h2>
+    <div class="product">
+      <img src="smartwatch.jpg" alt="ساعة ذكية">
+      <h3>ساعة ذكية</h3>
+      <p>تصميم أنيق ومزايا متعددة</p>
+      <span>499 كرونة</span>
+      <button>أضف إلى السلة</button>
+    </div>
+    <div class="product">
+      <img src="headphones.jpg" alt="سماعات بلوتوث">
+      <h3>سماعات بلوتوث</h3>
+      <p>صوت نقي وعزل ممتاز</p>
+      <span>299 كرونة</span>
+      <button>أضف إلى السلة</button>
+    </div>
+  </section>
+
+  <!-- منتجات ملابس -->
+  <section id="clothing" class="product-category" style="display:none;">
+    <h2>👕 ملابس</h2>
+    <div class="product">
+      <img src="tshirt.jpg" alt="تيشيرت">
+      <h3>تيشيرت قطن</h3>
+      <p>خامة مريحة وتصميم عصري</p>
+      <span>149 كرونة</span>
+      <button>أضف إلى السلة</button>
+    </div>
+  </section>
+
+  <!-- منتجات إكسسوارات -->
+  <section id="accessories" class="product-category" style="display:none;">
+    <h2>👜 إكسسوارات</h2>
+    <div class="product">
+      <img src="wallet.jpg" alt="محفظة جلد">
+      <h3>محفظة جلد</h3>
+      <p>مصنوعة يدويًا من جلد طبيعي</p>
+      <span>199 كرونة</span>
+      <button>أضف إلى السلة</button>
+    </div>
+  </section>
+
+  <!-- تذييل -->
+  <footer>
+    <p>© 2025 متجر حسين. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- سكربت لتبديل التصنيفات -->
+  <script>
+    function showCategory(category) {
+      document.querySelectorAll('.product-category').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(category).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ساعة ذكية | متجر حسين</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>ساعة ذكية</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- تفاصيل المنتج -->
+  <section id="product-details" style="max-width:800px; margin:auto; padding:40px;">
+    <img src="smartwatch.jpg" alt="ساعة ذكية" style="width:100%; border-radius:10px;">
+    <h2>ساعة ذكية متعددة الوظائف</h2>
+    <p>
+      ساعة ذكية بتصميم أنيق، مقاومة للماء، تدعم قياس نبضات القلب، تتبع النشاط اليومي، وتعمل بتقنية البلوتوث.
+      مناسبة للرياضة والعمل اليومي.
+    </p>
+    <ul>
+      <li>شاشة لمس 1.5 إنش</li>
+      <li>بطارية تدوم حتى 7 أيام</li>
+      <li>توافق مع iOS و Android</li>
+    </ul>
+    <h3>السعر: 499 كرونة</h3>
+    <button>أضف إلى السلة</button>
+  </section>
+
+  <!-- تقييمات العملاء -->
+  <section id="reviews" style="background-color:#f9f9f9; padding:30px;">
+    <h2>آراء العملاء</h2>
+    <div class="review">
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+      <p>ساعة ممتازة، استخدمتها في الجيم وكل شيء تمام!</p>
+      <span>- أحمد من ستوكهولم</span>
+    </div>
+    <form>
+      <textarea placeholder="اكتب رأيك هنا..."></textarea>
+      <select>
+        <option>⭐️</option>
+        <option>⭐️⭐️</option>
+        <option>⭐️⭐️⭐️</option>
+        <option>⭐️⭐️⭐️⭐️</option>
+        <option>⭐️⭐️⭐️⭐️⭐️</option>
+      </select>
+      <button type="submit">إرسال التقييم</button>
+    </form>
+  </section>
+
+  <!-- تذييل -->
+  <footer>
+    <p>© 2025 متجر حسين. جميع الحقوق محفوظة.</p>
+  </footer>
+
+</body>
+</html>
